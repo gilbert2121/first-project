@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+            font-family:'poppins', sans-serif;
+
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        #header{
+            background-color: goldenrod;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            height: 80px;
+            border-radius:3px;
+            padding: 15px;
+            margin: 30px;
+
+        }
+        .logo{
+            font-size: 30px;
+            font: bold;
+            color:white;
+        }
+        .cart{
+            background-color: white;
+            padding: 7px;
+            border-radius: 20px;
+          
+           
+        }
+        
+        .cart p{
+           color:goldenrod;
+        }
+        .container{
+            width: 70%;
+            display: flex;
+            margin-bottom: 30px;
+        }
+        #root{
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        #sidebar{
+            width: 40%;
+            border-radius: 5px;
+            background-color: #eee;
+            margin-left: 20px;
+            text-align:center;
+            padding: 15px;
+        }
+        .head{
+            background-color: goldenrod;
+            color: white;
+            display: flex;
+            padding: 8px;
+            border-radius: 7px;
+            margin-bottom: 20px;
+
+        }
+        #foot{
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #333;
+            margin: 20px 0px;
+            padding: 10px 0;
+        }
+       
+    </style>
+</head>
+<body>
+     <div id="header">
+        <div class="logo ">LOGO </div>
+        <div class="cart">
+        <p>cart 0</p>
+        </div>
+     </div>
+    <div class="container">
+        <div id="root"></div>
+        <div id="sidebar">
+            <div class="head"> My Cart</div>
+            <div id="cartItem"> Your cart is empty</div>
+            <div id="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="addToCart.jss"></script>
+</body>
+</html>
